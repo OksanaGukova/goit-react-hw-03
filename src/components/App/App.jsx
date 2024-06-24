@@ -16,8 +16,8 @@ function App() {
   return (
     <div>
       <h1>Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
+     {/*  <ContactForm />
+      <SearchBox /> */}
       <ContactList contacts={contacts} onDeleteContact={handleDeleteContact} />
     </div>
   );
