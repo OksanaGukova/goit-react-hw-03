@@ -5,7 +5,6 @@ import css from './App.module.css'
 import ContactForm from "../ContactForm/ContactForm";
 import SearchBox from '../SearchBox/SearchBox'
 
-
 function App() {
   const [contacts, setContacts] = useState(() => {
     const savedContacts = localStorage.getItem("contacts");
