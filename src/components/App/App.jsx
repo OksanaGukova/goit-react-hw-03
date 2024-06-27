@@ -18,8 +18,6 @@ function App() {
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
-
-
   const addContacts = (newContact) => {
     setContacts((prevContacts) => {
   return [...prevContacts, newContact]
