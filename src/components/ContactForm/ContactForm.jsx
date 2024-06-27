@@ -12,7 +12,7 @@ const FeedbackSchema = Yup.object().shape({
     .max(50, "Too Long!")
     .required("Required"),
   number: Yup.string()
-    .matches(/^\d+$/, "Phone number must contain only digits")
+    .matches(/^[0-9-]+$/, "Phone number must contain only digits and hyphens")
     .min(3, "Too short!")
     .max(50, "Too long!")
     .required("Required"),
@@ -46,7 +46,7 @@ const ContactForm = ({ onAdd }) => {
         <div className={css.containerItem}>
           <div className={css.fieldContainer}>
             <label htmlFor={nameFieldId}>Name</label>
-            <Field name="name" type="text" id={nameFieldId} />
+            <Field className={css.input} name="name" type="text" id={nameFieldId} />
             <div className={css.errorMessage}>
  <ErrorMessage
               name="name"
@@ -56,7 +56,7 @@ const ContactForm = ({ onAdd }) => {
           </div>
           <div className={css.fieldContainer}>
             <label htmlFor={numberFieldId}>Number</label>
-            <Field name="number" type="text" id={numberFieldId} />
+            <Field className={css.input} name="number" type="text" id={numberFieldId} />
             <div  className={css.errorMessage}> 
   <ErrorMessage
               name="number"

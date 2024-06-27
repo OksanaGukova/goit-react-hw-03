@@ -10,10 +10,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
+      
 }
 
 label {
     margin-bottom: 4px;
+    
 }
 
 .containerItem {
@@ -23,8 +25,8 @@ label {
 .button{
 letter-spacing: 0.04em;
   cursor: pointer;
-    background-color: lightgray;
-        border: 2px solid darkgray;
+  background-color: lightgray;
+   border: 2px solid darkgray;
 }
 
 .buttonContainer {
@@ -37,4 +39,8 @@ letter-spacing: 0.04em;
 .errorMessage {
   height: 1.2em; 
   color: red;
+}
+
+.input {
+  height: 24px;
 }

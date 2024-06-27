@@ -1,18 +1,19 @@
 .container {
     display: flex;
-        align-items: center;
-        gap: 80px;
-            border: 1px solid;
-                border-radius: 16px;
+    align-items: center;
+     gap: 80px;
+     border: 1px solid;
+    border-radius: 16px;
+     width: 360px;
             
         
 }
 
 .delButton {
-     display: flex;
-      padding: 8px 24px;
-justify-content: center;
-align-items: center;
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
 margin: 0 auto;
 border-radius: 4px;
 text-align: center;
@@ -21,11 +22,12 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
  height: 40px;
-  cursor: pointer;
-    background-color: lightgray;
-    margin-right: 20px;
-        border: 2px solid darkgray;
+cursor: pointer;
+ background-color: lightgray;
+margin-right: 20px;
+border: 2px solid darkgray;
 }
+
 
 .list {
     padding: 12px;
@@ -33,7 +35,7 @@ letter-spacing: 0.04em;
 
 .listItem {
     display: flex;
-        align-items: center;
+    align-items: center;
     gap: 12px;
    
 }
